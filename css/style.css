@@ -1,0 +1,183 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+nav#navbar{
+  background-color: #e0ebe8;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+#navbar ul{
+  float: right;
+  margin-top: 15px;
+}
+#navbar li{
+  list-style: none;
+  display: inline-block;
+}
+#navbar a{
+  display: block;
+  padding: 10px 40px;
+  margin: 5px 10px;
+  color: #008080;
+}
+
+#welcome-section{
+  clear: both;
+  width: 100%;
+  height: 100vh;
+  background-color: #e0ebe8;
+}
+#welcome-section h1{
+  display: block;
+  text-align: center;
+  padding-top: 45vh;
+}
+#welcome-section div{
+  margin-top: 10px;
+  color: green;
+  text-align: center;  
+}
+
+#projects{
+  width: 70%;
+  max-width: 770px;
+  margin: 0px auto;
+}
+#projects h3{
+  text-align: center;
+  padding: 110px 0px 50px;
+  color: #008080;
+  font-weight: normal;
+  font-size: 32px;
+}
+.grid-container {
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: start;
+}
+div.project-tile{
+  border: 2px solid lightblue;
+  margin: auto;
+}
+.img-work{
+  width: 100%;
+  min-width: 250px;
+  height: auto;
+}
+.project-tile h4{
+  font-size: 16px;
+  display: block;
+  height: 38px;
+  text-align: center;
+  color: #008080;
+  border-top: 2px solid lightblue;
+}
+div.button {
+  margin: 30px auto;
+}
+.button a{
+  color:  #008080;
+  border: 2px solid #90C695;
+  background: #e0ebe8;
+  text-align: center;
+  display: block;
+  width: 150px;
+  margin: 0px auto;
+  padding: 10px 20px;
+  border-radius: 5px 
+}
+.button a:hover,
+.contact a:hover{
+  background: #E4F1FE;
+  color: green;
+}
+#profile{
+  margin-top: 30px;
+  background: #C8F7C5;
+  padding: 170px 0px;
+}
+#profile h2{
+  text-align: center;
+  font-size: 28px;  
+}
+  #profile h3{
+  text-align: center;
+  font-size: 18px; 
+  font-weight: 400;
+  margin-top: 10px;
+}
+ div.contact{
+  text-align: center;
+} 
+.contact a{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #e0ebe8;
+  border: 2px solid #90C695;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: center;
+  line-height: 100px;
+  margin: 80px 10px 10px;
+}
+
+footer {
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  background: #22313F;;
+}
+footer p{
+  margin: 20px 0 0 0;
+}
+footer a{
+  text-decoration: underline;
+  color: white;
+}
+@media (max-width: 780px){
+    #navbar ul{
+      float: none;
+      text-align: center;
+   }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+  }
+    #profile{
+      padding: 70px 0px;
+  }
+    .contact a{
+      margin: 40px 5px 10px;
+  }
+  
+}
+@media (max-width: 470px){
+  nav#navbar{
+     height: 60px;
+  }
+  #navbar ul{
+    margin-top: 5px;
+  }
+  #navbar a{
+    padding: 10px;
+    margin: 5px 10px;
+  }
+  #projects{
+    width: 100%;  
+  }
+}
